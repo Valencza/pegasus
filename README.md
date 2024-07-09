@@ -62,7 +62,7 @@ php artisan db:seed
 php artisan storage:link
 ```
 
-### Step 8: Start the Development Server
+### Step 9: Start the Development Server
 
 ```bash
 php artisan serve
@@ -70,7 +70,7 @@ php artisan serve
 
 Your Pegasus application should now be up and running. You can access it at `http://127.0.0.1:8000`.
 
-### Step 8: Tes Login
+### Step 10: Tes Login
 
 ```bash
 Email: admin@example.com
