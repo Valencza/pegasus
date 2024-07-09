@@ -70,6 +70,14 @@ php artisan serve
 
 Your Pegasus application should now be up and running. You can access it at `http://127.0.0.1:8000`.
 
+### Step 8: Link data from storage
+
+```bash
+Tes Login:
+Email: admin@example.com
+Password: 12345678
+```
+
 ## License
 ```This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.```
 

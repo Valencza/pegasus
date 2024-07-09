@@ -5,26 +5,24 @@
 @section('attr-nav')
 <!-- Start Atribute Navigation -->
 <div class="attr-nav flex">
-    <ul>
-        <li class="contact">
-            <div class="call">
-            </div>
-        </li>
-    </ul>
 </div>
 <!-- End Atribute Navigation -->
 @endsection
 
 @section('content')
-<!-- Start Contact Us
-    ============================================= -->
     <div class="contact-area contact-page bg-gray overflow-hidden default-padding" style="background-image: url(assets/user/img/shape/map.png);">
         <div class="shape-right-bottom">
             <img src="assets/user/img/shape/18.png" alt="Shape">
         </div>
+        
+        <div class="row align-center p-5 mt--150">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.0891118061813!2d110.37275!3d-7.780376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5949cabd66cb%3A0x3592157d4977c8ef!2sPT.%20Pegasus%20Nusantara%20Jaya%20Abadi!5e0!3m2!1sen!2sid!4v1720556093699!5m2!1sen!2sid" 
+                width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
         <div class="container">
             <div class="row align-center">
-
                 <div class="col-tact-stye-one col-lg-6">
                     <div class="contact-form-style-one">
                         <form action="#" method="POST" class="contact-form contact-form">
@@ -72,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="col-tact-stye-one col-lg-5 offset-lg-1 mt--80 mt-md-50 mt-xs-50">
+                <div class="col-tact-stye-one col-lg-5 offset-lg-1 mt-md-50 mt-xs-50">
                     <div class="contact-style-one-info">
                         <div class="mb-40">
                             <h2>Contact Information</h2>

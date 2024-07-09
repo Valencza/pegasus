@@ -252,9 +252,7 @@
                             </li>
                             <!--/ User -->
                         </ul>
-
                     </div>
-
 
                     <!-- Search Small Screens -->
                     <div class="navbar-search-wrapper search-input-wrapper  d-none">
@@ -262,17 +260,11 @@
                             placeholder="Search..." aria-label="Search...">
                         <i class="bx bx-x bx-sm search-toggler cursor-pointer"></i>
                     </div>
-
-
                 </nav>
-
-
-
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
                 @yield('content')
                 <!-- Content wrapper -->
-
             </div>
             <!-- / Layout page -->
         </div>
@@ -489,8 +481,6 @@
         });
     </script>
 
-
-
     @if (Session::has('status') && Session::has('message'))
         <script>
             const Toast = Swal.mixin({
@@ -511,7 +501,6 @@
             });
         </script>
     @endif
-
 
 </body>
 
