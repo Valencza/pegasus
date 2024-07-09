@@ -1,0 +1,89 @@
+@extends('templates.admin')
+
+@section('title', 'Add New Blog')
+
+@push('admin_style')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+
+@endpush
+
+@section('content')
+<div class="content-wrapper">
+    <!-- Content -->
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="card mb-4">
+            <div class="card-header d-flex align-items-center justify-content-between">
+                <h5 class="mb-0">Blog Form</h5>
+                <small class="text-muted float-end">Create a new Blog item</small>
+            </div>
+            <div class="card-body">
+                <form action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data" autocomplete="off">
+                    @csrf
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="judul">Judul</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="judul" name="judul" placeholder="Enter title"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="gambar">Gambar</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control dropify" data-max-file-size="3M"
+                                data-allowed-file-extensions="png jpg jpeg" id="gambar" name="gambar" required
+                                accept=".jpg, .jpeg, .png">
+                            <small class="text-muted">Maximum file size: 3MB</small>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="penulis">Penulis</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="penulis" name="penulis"
+                                placeholder="Enter author name" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="tanggal">Tanggal</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="kategori">Kategori</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="kategori" name="kategori" required>
+                                <option value="Company Profile">Company Profile</option>
+                                <option value="E-Commerce">E-Commerce</option>
+                                <option value="ERP">ERP</option>
+                                <option value="Point Of Sale">Point Of Sale</option>
+                                <option value="E-Learning">E-Learning</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="E-Payment">E-Payment</option>
+                                <option value="Accounting">Accounting</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="deskripsi">Deskripsi</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="myeditorinstance" name="deskripsi" placeholder="Enter description"
+                                    style="height: 100px; resize: none;"></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Create Blog</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+@push('admin_scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+<script>
+    $('.dropify').dropify();
+</script>
+@endpush
