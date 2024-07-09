@@ -40,7 +40,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- TinyMCE -->
-    <script src="https://cdn.tiny.cloud/1/cm04os8xv85p2rkyc0fz5owz1qp2qbsq7zbj4rrtnd8yyfz7/tinymce/5/tinymce.min.js"
+    <script src="https://cdn.tiny.cloud/1/YOUR_API_KEY/tinymce/5/tinymce.min.js"
         referrerpolicy="origin"></script>
 
     <script>
