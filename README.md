@@ -6,6 +6,8 @@ Pegasus is a web application built with Laravel. Follow these instructions to se
 
 ## Installation
 
+Make sure you have Laravel 11 installed
+
 ### Step 1: Clone the Repository
 
 ```bash
