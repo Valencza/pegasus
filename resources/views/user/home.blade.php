@@ -368,7 +368,7 @@
             <div class="row">
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-planning"></i>
                         <h4><a href="services-details.html">Structured Cable System</a></h4>
                         <p>
@@ -380,7 +380,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-startup-6"></i>
                         <h4><a href="services-details.html">Mendesain dan membangun data center</a></h4>
                         <p>
@@ -392,7 +392,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-marketing-agent"></i>
                         <h4><a href="services-details.html">Unified Communication Systems</a></h4>
                         <p>
@@ -404,7 +404,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-secure-1"></i>
                         <h4><a href="services-details.html">Merancang dan membangun Sound System, Alarm Systems, Paging</a></h4>
                         <p>
@@ -416,7 +416,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-data-analysis-1"></i>
                         <h4><a href="services-details.html">Systems dan Audio Visual Multimedia Conference System</a></h4>
                         <p>
@@ -428,7 +428,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">Smart classroom with Control System</a></h4>
                         <p>
@@ -440,7 +440,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">BAS / BAS Over IP dan UPS</a></h4>
                         <p>
@@ -452,7 +452,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">Fire Alarm System</a></h4>
                         <p>
@@ -464,7 +464,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
                         <p>
@@ -476,7 +476,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
                         <p>
@@ -488,7 +488,7 @@
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
+                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
                         <i class="flaticon-research-1"></i>
                         <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
                         <p>
