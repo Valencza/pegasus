@@ -1,6 +1,6 @@
 @extends('templates.admin')
 
-@section('title', 'Edit Portfolio')
+@section('title', 'Edit Portofolio')
 
 @push('admin_style')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
@@ -12,8 +12,8 @@
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="card mb-4">
             <div class="card-header d-flex align-items-center justify-content-between">
-                <h5 class="mb-0">Portfolio Form</h5>
-                <small class="text-muted float-end">Edit a portfolio item</small>
+                <h5 class="mb-0">Portofolio Form</h5>
+                <small class="text-muted float-end">Edit a portofolio item</small>
             </div>
             <div class="card-body">
                 <form action="{{ route('portfolio.update', $portfolio->id) }}" method="POST"
@@ -121,7 +121,7 @@
 
                     <div class="row justify-content-end">
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">Update Portfolio</button>
+                            <button type="submit" class="btn btn-primary">Update Portofolio</button>
                         </div>
                     </div>
                 </form>

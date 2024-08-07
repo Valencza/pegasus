@@ -899,7 +899,7 @@ body {
 	content: "";
 	height: 100%;
 	width: 200%;
-	background: var(--bg-gradient);
+	background: #A51428;
 	z-index: -1;
 }
 

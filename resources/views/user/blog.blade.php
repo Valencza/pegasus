@@ -24,34 +24,55 @@
         margin-bottom: 10px;
     }
 
+    /* Default styles */
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.filter-button {
+    border: 2px solid #A51428;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #A51428;
+    background-color: white;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.filter-button:hover {
+    color: white;
+    background-color: #A51428;
+}
+
+.filter-button.active {
+    background-color: #A51428;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
     .filter-bar {
-        display: flex;
-        gap: 10px;
-        align-items: center;
+        flex-wrap: wrap; /* Allow items to wrap if needed */
         justify-content: center;
-        padding: 10px;
     }
 
     .filter-button {
-        border: 1px solid transparent;
-        border-radius: 20px;
-        padding: 5px 15px;
-        color: #0A1F44;
-        border: 2px solid #0A1F44;
-        background-color: white;
-        cursor: pointer;
-        transition: background 0.3s, color 0.3s;
+        font-size: 14px; /* Smaller text size */
+        padding: 5px 10px; /* Adjust padding */
     }
+}
 
-    .filter-button:hover {
-        background-color: #6A00FF;
-        color: white;
+@media (max-width: 480px) {
+    .filter-button {
+        font-size: 12px; /* Even smaller text size */
+        padding: 4px 8px; /* Further reduced padding */
     }
+}
 
-    .filter-button.active {
-        background-color: #0A1F44;
-        color: white;
-    }
 </style>
 @endsection
 

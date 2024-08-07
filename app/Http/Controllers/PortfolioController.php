@@ -2,37 +2,37 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Portfolio;
+use App\Models\portfolio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
-class PortfolioController extends Controller
+class portfolioController extends Controller
 {
     public function index()
     {
-        $portfolios = Portfolio::all();
+        $portfolios = portfolio::all();
         return view('admin.portfolio.home', compact('portfolios'));
     }
     public function show()
     {
-        $portfolios = Portfolio::latest()->paginate(5);
+        $portfolios = portfolio::latest()->paginate(5);
         return view('user.home', compact('portfolios'));
     }
     // public function show_details($slug)
     // {
-    //     $portfolios = Portfolio::where('slug', $slug)->first();
+    //     $portfolios = portfolio::where('slug', $slug)->first();
     //     return view('user.portfolio-detail', compact('portfolios'));
     // }
 
-    public function detailPortfolio($slug)
+    public function detailportfolio($slug)
     {
-        $portfolios = Portfolio::where('slug', $slug)->first();
+        $portfolios = portfolio::where('slug', $slug)->first();
         return view('user.portfolio-detail', compact('portfolios'));
     }
 
     public function display()
     {
-        $portfolios = Portfolio::all();
+        $portfolios = portfolio::all();
         return view('user.portfolio', compact('portfolios'));
     }
 
@@ -55,7 +55,7 @@ class PortfolioController extends Controller
                 'deskripsi' => 'required',
             ]);
 
-            $portfolio = new Portfolio();
+            $portfolio = new portfolio();
             $portfolio->nama = $validatedData['nama'];
             $portfolio->lokasi = $validatedData['lokasi'];
             $portfolio->kategori = $validatedData['kategori'];
@@ -74,7 +74,7 @@ class PortfolioController extends Controller
 
             return redirect()->route('portfolio.index')->with([
                 'status' => 'success',
-                'message' => 'Portfolio created successfully!'
+                'message' => 'portfolio created successfully!'
             ]);
         } catch (\Exception $e) {
             return redirect()->route('portfolio.index')->with([
@@ -84,27 +84,27 @@ class PortfolioController extends Controller
         }
     }
 
-    // public function show(Portfolio $portfolio)
+    // public function show(portfolio $portfolio)
     // {
     //     return view('portfolio.show', compact('portfolio'));
     // }
 
     public function edit(Request $request, $portfolio_id)
     {
-        $portfolio = Portfolio::findOrFail($portfolio_id);
+        $portfolio = portfolio::findOrFail($portfolio_id);
         return view('admin.portfolio.edit', compact('portfolio'));
     }
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Portfolio  $portfolio
+     * @param  \App\Models\portfolio  $portfolio
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $portfolio_id)
     {
         try {
-            $portfolio = Portfolio::find($portfolio_id);
+            $portfolio = portfolio::find($portfolio_id);
             $portfolio->nama = $request['nama'];
             $portfolio->lokasi = $request['lokasi'];
             $portfolio->kategori = $request['kategori'];
@@ -129,7 +129,7 @@ class PortfolioController extends Controller
 
             return redirect()->route('portfolio.index')->with([
                 'status' => 'success',
-                'message' => 'Portfolio item updated successfully!'
+                'message' => 'portfolio item updated successfully!'
             ]);
         } catch (\Exception $e) {
             return redirect()->route('portfolio.index')->with([
@@ -142,7 +142,7 @@ class PortfolioController extends Controller
     public function destroy($portfolio_id)
     {
         try {
-            $portfolio = Portfolio::findOrFail((int) $portfolio_id);
+            $portfolio = portfolio::findOrFail((int) $portfolio_id);
             if ($portfolio->gambar) {
                 $destination = 'storage/portfolio/gambar/' . $portfolio->gambar;
                 if (File::exists($destination)) {

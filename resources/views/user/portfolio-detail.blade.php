@@ -16,7 +16,7 @@
                             alt="Thumb"
                             style="width: 100%; object-fit: cover; margin-bottom: 20px;">
                         </div>
-                        {{-- <h2>{{$portfolios->nama}}</h2> --}}
+                        <h2>{{$portfolios->nama}}</h2>
                         <h5 class="mb-40">
                             {!! $portfolios->deskripsi !!}
                         </h5>

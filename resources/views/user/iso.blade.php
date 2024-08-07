@@ -16,21 +16,18 @@
                                     <!-- Single Item -->
                                     <div class="gallery-item">
                                         <div class="gallery-style-two">
-                                            <div class="thumb">
-                                                <img src="{{asset('assets/user/img/logo-iso.png')}}" alt="thumb">
+                                        <div class="thumb d-flex justify-content-center">
+                                                <img src="{{asset('assets/user/img/iso/iso1.png')}}" alt="thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="project-details.html" style="color: black;">QMS 200324</a></h4>
+                                                    <h4><strong>QMS 200324</strong></h4>
                                                     <ul class="gallery-list">
                                                         <li>Quality Management</li>
                                                     </ul>
                                                     <ul class="gallery-list">
-                                                        <li>Informasi</li>
+                                                        <li>DESKRIPSI</li>
                                                     </ul>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -39,21 +36,18 @@
                                     <!-- Single Item -->
                                     <div class="gallery-item">
                                         <div class="gallery-style-two">
-                                            <div class="thumb">
-                                                <img src="{{asset('assets/user/img/logo-iso.png')}}" alt="thumb">
+                                        <div class="thumb d-flex justify-content-center">
+                                                <img src="{{asset('assets/user/img/iso/iso2.png')}}" alt="thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="project-details.html" style="color: black;">QMS 200324</a></h4>
+                                                    <h4><strong> QMS 200324</strong></h4>
                                                     <ul class="gallery-list">
                                                         <li>Quality Management</li>
                                                     </ul>
                                                     <ul class="gallery-list">
-                                                        <li>Informasi</li>
+                                                        <li>DESKRIPSI</li>
                                                     </ul>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,21 +56,18 @@
                                     <!-- Single Item -->
                                     <div class="gallery-item">
                                         <div class="gallery-style-two">
-                                            <div class="thumb">
-                                                <img src="{{asset('assets/user/img/logo-iso.png')}}" alt="thumb">
+                                        <div class="thumb d-flex justify-content-center">
+                                                <img src="{{asset('assets/user/img/iso/iso3.png')}}" alt="thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="project-details.html" style="color: black;">QMS 200324</a></h4>
+                                                    <h4><strong> QMS 200324</strong></h4>
                                                     <ul class="gallery-list">
                                                         <li>Quality Management</li>
                                                     </ul>
                                                     <ul class="gallery-list">
-                                                        <li>Informasi</li>
+                                                        <li>DESKRIPSI</li>
                                                     </ul>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,21 +76,18 @@
                                     <!-- Single Item -->
                                     <div class="gallery-item">
                                         <div class="gallery-style-two">
-                                            <div class="thumb">
-                                                <img src="{{asset('assets/user/img/logo-iso.png')}}" alt="thumb">
+                                        <div class="thumb d-flex justify-content-center">
+                                                <img src="{{asset('assets/user/img/iso/iso4.png')}}" alt="thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="project-details.html" style="color: black;">QMS 200324</a></h4>
+                                                    <h4><strong> QMS 200324</strong></h4>
                                                     <ul class="gallery-list">
                                                         <li>Quality Management</li>
                                                     </ul>
                                                     <ul class="gallery-list">
-                                                        <li>Informasi</li>
+                                                        <li>DESKRIPSI</li>
                                                     </ul>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,21 +96,18 @@
                                     <!-- Single Item -->
                                     <div class="gallery-item">
                                         <div class="gallery-style-two">
-                                            <div class="thumb">
-                                                <img src="{{asset('assets/user/img/logo-iso.png')}}" alt="thumb">
+                                        <div class="thumb d-flex justify-content-center">
+                                                <img src="{{asset('assets/user/img/iso/iso5.png')}}" alt="thumb">
                                             </div>
                                             <div class="content">
                                                 <div class="info">
-                                                    <h4><a href="project-details.html" style="color: black;">QMS 200324</a></h4>
+                                                    <h4><strong> QMS 200324</strong></h4>
                                                     <ul class="gallery-list">
                                                         <li>Quality Management</li>
                                                     </ul>
                                                     <ul class="gallery-list">
-                                                        <li>Informasi</li>
+                                                        <li>DESKRIPSI</li>
                                                     </ul>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="project-details.html"><i class="fas fa-long-arrow-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>

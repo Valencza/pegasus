@@ -34,6 +34,35 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+    <style>
+        /* Gaya untuk item menu utama */
+        .navbar-nav>li>a {
+            transition: color 0.3s;
+        }
+
+        .navbar-nav>li:hover>a,
+        .navbar-nav>li>a:focus,
+        .navbar-nav>li>a:active {
+            color: #2667FF !important;
+        }
+
+        /* Gaya untuk item menu dropdown */
+        .navbar-nav .dropdown-menu>li>a {
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .dropdown-menu>li:hover>a,
+        .navbar-nav .dropdown-menu>li>a:focus,
+        .navbar-nav .dropdown-menu>li>a:active {
+            color: #2667FF !important;
+        }
+
+        /* Menampilkan dropdown menu */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -45,7 +74,7 @@
 
     <!-- Start Header Top
     ============================================= -->
-    <div class="top-bar-area top-bar-style-two bg-dark text-light">
+    <div class="top-bar-area top-bar-style-two text-light" style="background: #A51428;">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-8">
@@ -65,7 +94,7 @@
                             </div>
                             <div class="info">
                                 <strong>Phone</strong>
-                                <a href="#">(+62) 274 515555</a>
+                                (+62) 274 515555
                             </div>
                         </li>
                     </ul>
@@ -77,7 +106,7 @@
                         </div>
                         <div class="info">
                             <p>Have any Questions?</p>
-                            <h5><a href="mailto:info@pegasusindonesia.co.id">info@pegasusindonesia.co.id</a></h5>
+                            <h5>info@pegasusindonesia.co.id</h5>
                         </div>
                     </div>
                 </div>
@@ -129,28 +158,29 @@
 
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
-                            <a href="/" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <a href="/">Home</a>
                         </li>
 
                         <li class="">
-                            <a href="/about-us" class="dropdown-toggle" data-toggle="dropdown" >About Us</a>
+                            <a href="/about-us">About Us</a>
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product</a>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ url('/service/solusi') }}">Solusi</a></li>
-                                <li><a href="{{ url('/service/layanan-handal-responsif') }}">Layanan Handal & Responsif</a></li>
-                                <li><a href="{{ url('/service/memberi-manfaat-bagi-masyarakat') }}">Memberi Manfaat Bagi Masyarakat</a></li>
+                                <li><a href="{{ url('/product/pegacare') }}">Pegacare</a></li>
+                                <li><a href="{{ url('/product/goggle-for-education') }}">Goggle For Education</a></li>
+                                <li><a href="{{ url('/product/konstruksi') }}">Konstruksi</a></li>
+                                <li><a href="{{ url('/product/industri-perbankan') }}">Industri Perbankan</a></li>
                             </ul>
                         </li>
 
                         <li class="">
-                            <a href="/portfolio" class="dropdown-toggle" data-toggle="dropdown" >Portofolio</a>
+                            <a href="/portfolio">Portofolio</a>
                         </li>
 
                         <li class="">
-                            <a href="/blog" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                            <a href="/blog">Blog</a>
                         </li>
                         <li><a href="/contact-us">Contact</a></li>
                     </ul>
@@ -176,7 +206,7 @@
                         <a href="#" class="close-side"><i class="icon_close"></i></a>
                         <div class="widget">
                             <div class="logo">
-                                <img src="{{asset ('assets/user/img/logo.png')}}" alt="Logo">
+                                <img src="{{asset ('assets/user/img/logo-footer.png')}}" alt="Logo">
                             </div>
                         </div>
                         <div class="widget address">
@@ -250,12 +280,12 @@
 
                 <!-- Single Item -->
                 <div class="swiper-slide banner-style-four">
-                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/user/img/banner/8.jpg);"></div>
+                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/user/img/banner/8.png);"></div>
                     <div class="container">
                         <div class="row align-center">
                             <div class="col-xl-6 col-lg-7 col-md-10">
                                 <div class="content">
-                                    <h2>PT. Pegasus Indonesia Nusantara Jaya Abadi</h2>
+                                    <h2>PT. Pegasus Nusantara Jaya Abadi</h2>
                                     <p>
                                         Menyediakan berbagai layanan konsultasi di bidang Teknologi Informasi. Berbagai instansi mempercayakan
                                         pengadaan produk IT-nya kepada kami.
@@ -277,12 +307,12 @@
 
                 <!-- Single Item -->
                 <div class="swiper-slide banner-style-four">
-                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/user/img/banner/6.jpg);"></div>
+                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/user/img/banner/6.png);"></div>
                     <div class="container">
                         <div class="row align-center">
                             <div class="col-xl-6 col-lg-7 col-md-10">
                                 <div class="content">
-                                    <h2>PT. Pegasus Indonesia Nusantara Jaya Abadi</h2>
+                                    <h2>PT. Pegasus Nusantara Jaya Abadi</h2>
                                     <p>
                                         PT. Pegasus Nusantara Jaya Abadi lebih banyak menangani kebutuhan project dan lelang atau tender yang di adakan oleh Pemerintah.
                                     </p>
@@ -318,8 +348,8 @@
             <div class="row">
                 <div class="col-lg-6 about-style-three">
                     <div class="about-three-thumb">
-                        <img src="assets/user/img/thumb/6.jpg" alt="Image Not Found">
-                        <img src="assets/user/img/thumb/5.jpg" alt="Image Not Found">
+                        <img src="assets/user/img/thumb/6-1.png" alt="Image Not Found">
+                        <img src="assets/user/img/thumb/5-1.png" alt="Image Not Found">
                         <div class="experience">
                             <h2><strong>9</strong> Years Experience</h2>
                         </div>
@@ -332,169 +362,131 @@
                 <div class="col-lg-5 offset-lg-1 about-style-three">
                     <div class="about-three-info">
                         <h4 class="sub-title">WELCOME TO PEGASUS</h4>
-                        <h2 class="title">PT. Pegasus Nusantara Jaya Abadi <br> adalah Perusahaan yang bergerak di bidang IT yang berdiri sejak 16 Maret 2015. </h2>
+                        <h2 class="title">PT. Pegasus Nusantara Jaya Abadi</h2>
                         <p>
-                            PT. Pegasus Nusantara Jaya Abadi lebih banyak menangani kebutuhan project dan lelang atau tender yang di adakan oleh Pemerintah.
-                            Tetapi kami juga melayani penunjukan langsung untuk memenuhi kebutuhan IT di instansi swasta atau pemerintah.
+                            Perusahaan kami bergerak di bidang Pengadaan Barang atau Jasa dan Konsultan IT yang berdiri pada 16 Maret 2015 oleh
+                            para praktisi yang berpengalaman di bidangnya. PT. Pegasus Nusantara Jaya Abadi adalah salah satu perusahaan dari
+                            PT. Harrisma Buwana Jaya group.
                         </p>
                         <ul class="list-grid-four">
-                            <li><a href="services-details.html">Solusi</a></li>
-                            <li><a href="services-details.html">Layanan Handal & Responsif</a></li>
-                            <li><a href="services-details.html">Memberi Manfaat Bagi Masyarakat</a></li>
+                            <li>Sertifikasi Google Cloud Partner</li>
+                            <li>Smart class and Smart Office</li>
+                            <li>Pengadaan Hardware</li>
+                            <li>IT Software Solution</li>
                         </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     <!-- End About -->
 
-    <!-- Start Services
+    <!-- Start Services 
     ============================================= -->
-    <div class="services-style-three-area bg-dark bg-cover default-padding bottom-less" style="background-image: url(assets/user/img/shape/banner-6.jpg);">
+    <div class="services-style-two-area bg-dark default-padding bottom-less">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <!-- <h5 class="sub-title">Ruang</h5> -->
-                        <h2 class="title">Ruang <br> Lingkup Kerja</h2>
+            <div class="row service-items-container">
+                <div class="col-xl-6 mb-30 d-flex">
+                    <div class="service-style-two-heading bg-theme bg-cover text-light flex-fill d-flex flex-column" style="background-image: url(assets/user/img/shape/banner-3.png);">
+                        <h5 class="sub-title">Our Services</h5>
+                        <h2 class="title">Ruang Lingkup Kerja</h2>
+                        <div class="button-border-length mt-35">
+                            <a href="services.html" class="btn-arrow-length">See All</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-planning"></i>
-                        <h4><a href="services-details.html">Structured Cable System</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-startup-6"></i>
-                        <h4><a href="services-details.html">Mendesain dan membangun data center</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30 d-flex">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/structured-cable-system.png" alt="Image Not Found">
+                        </div>
+                        <p>Desain dan Pembangunan Sistem Struktur Kabel</p>
+                        <h4><strong>Structured Cable System</strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-marketing-agent"></i>
-                        <h4><a href="services-details.html">Unified Communication Systems</a></h4>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/data-center-infrastructure.png" alt="Image Not Found">
+                        </div>
                         <p>
-                            Deskripsi
+                            Pembangunan Infrastruktur Data Center
                         </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h4><strong>Data Center Infrastructure </strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-secure-1"></i>
-                        <h4><a href="services-details.html">Merancang dan membangun Sound System, Alarm Systems, Paging</a></h4>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/unfied-communication-system.png" alt="Image Not Found">
+                        </div>
                         <p>
-                            Deskripsi
+                            Desain dan Pembangunan Infrastruktur Telekomunikasi PABX, IP PBX, Sistem Kom...
                         </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h4><strong>Unified Communication System</strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-data-analysis-1"></i>
-                        <h4><a href="services-details.html">Systems dan Audio Visual Multimedia Conference System</a></h4>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/visual-multimedia.png" alt="Image Not Found">
+                        </div>
                         <p>
-                            Deskripsi
+                            Rancang Bangun Audio Visual Multimedia Conference System
                         </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h4><strong>Visual Multimedia Conference System</strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">Smart classroom with Control System</a></h4>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/it-development.png" alt="Image Not Found">
+                        </div>
                         <p>
-                            Deskripsi
+                            Develop IT Software dan Pengadaan Hardware Terkait
                         </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h4><strong>IT Development & Procurement Service</strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">BAS / BAS Over IP dan UPS</a></h4>
+                <!-- Start Single Item -->
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+                    <div class="service-style-two">
+                        <div class="icon">
+                            <img src="assets/user/img/icon/security-system.png" alt="Image Not Found">
+                        </div>
                         <p>
-                            Deskripsi
+                            Desain & Implementasi Security System, Gate Imaging Scanner, dll
                         </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">Fire Alarm System</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                    <div class="services-style-three h-100 d-flex flex-column justify-content-between" style="background-image: url(assets/user/img/shape/banner-3.jpg);">
-                        <i class="flaticon-research-1"></i>
-                        <h4><a href="services-details.html">Mendesain dan Implementasi</a></h4>
-                        <p>
-                            Deskripsi
-                        </p>
-                        <a href="services-details.html" class="btn-service">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <h4><strong>Security System Implementation</strong></h4>
+                        <div class="shape">
+                            <img src="assets/user/img/shape/15.png" alt="Image Not Found">
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
@@ -512,7 +504,7 @@
                     <div class="row">
                         <div class="col-xl-5 col-lg-6">
                             <div class="content-left">
-                                <h5 class="sub-title">Portofolio</h5>
+                                <h5 class="sub-title">portfolio</h5>
                                 <h2 class="heading">Completed Projects</h2>
                             </div>
                         </div>
@@ -532,7 +524,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
-                                    <div class="info text-light" style="background-image: url(assets/user/img/shape/banner-3.webp);">
+                                    <div class="info text-light" style="background-image: url(assets/user/img/shape/banner-3.png);">
                                         <h2>{{ $portfolio->nama }}</h2>
                                         <p>
                                             {!! $portfolio->deskripsi !!}
@@ -561,13 +553,13 @@
 
     <!-- Start Team
     ============================================= -->
-    <div class="team-style-three-area text-center default-padding-bottom bottom-less">
+    <div class="team-style-three-area text-center default-padding-bottom bottom-less" style="background: #F3F3F3;">
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-lg-8 offset-lg-2" style="margin-top: 2em;">
                     <div class="site-heading text-center">
-                        <h2 class="title">Why <br> Choose Us</h2>
+                        <h2 class="title">Why You Should <br> Choose Us</h2>
                     </div>
                 </div>
             </div>
@@ -578,11 +570,11 @@
                 <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30">
                     <div class="team-style-three">
-                        <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                            <img src="assets/user/img/logo-iso.png" alt="Image Not Found">
+                        <div class="thumb">
+                            <img src="assets/user/img/iso/iso1.png" alt="Image Not Found">
                         </div>
                         <div class="content">
-                            <h4><a href="#">Nama ISO</a></h4>
+                            <h4><strong>Quality Management</strong></h4>
                         </div>
                     </div>
                 </div>
@@ -590,38 +582,41 @@
                 <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30">
                     <div class="team-style-three">
-                        <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                            <img src="assets/user/img/logo-iso.png" alt="Image Not Found">
+                        <div class="thumb">
+                            <img src="assets/user/img/iso/iso2.png" alt="Image Not Found">
                         </div>
                         <div class="content">
-                            <h4><a href="#">Nama ISO</a></h4>
+                            <h4><strong>Occupational Health and Safety Management</strong></h4>
                         </div>
                     </div>
                 </div>
+
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30">
                     <div class="team-style-three">
-                        <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                            <img src="assets/user/img/logo-iso.png" alt="Image Not Found">
+                        <div class="thumb">
+                            <img src="assets/user/img/iso/iso3.png" alt="Image Not Found">
                         </div>
                         <div class="content">
-                            <h4><a href="#">Nama ISO</a></h4>
+                            <h4><strong>Environmental Management</strong></h4>
                         </div>
                     </div>
                 </div>
+
                 <!-- End Single Item -->
                 <!-- Single Item -->
                 <div class="col-xl-3 col-md-6 mb-30">
                     <div class="team-style-three">
-                        <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                            <img src="assets/user/img/logo-iso.png" alt="Image Not Found">
+                        <div class="thumb">
+                            <img src="assets/user/img/iso/iso4.png" alt="Image Not Found">
                         </div>
                         <div class="content">
-                            <h4><a href="#">Nama ISO</a></h4>
+                            <h4><strong>Information Security Management System</strong></h4>
                         </div>
                     </div>
                 </div>
+
                 <!-- End Single Item -->
             </div>
             <div class="button">
@@ -631,9 +626,61 @@
     </div>
     <!-- End Team  -->
 
+    <!-- Start Brand Area 
+    ============================================= -->
+    <div class="brand-area relative overflow-hidden bg-fixed" style="background-image: url(assets/img/banner/5.jpg);">
+        <div class="video-bg-live">
+            <img src="assets/user/img/banner/3.png" alt="Image Not Found" style="width: auto; height: 100%;">
+        </div>
+        <div class="shadow dark-hard"></div>
+        <div class="brand-style-one-info text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h2>Our Principal <br> Partnership</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand-style-one bg-gradient text-light">
+            <div class="container-fill">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="brand-carousel">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <img src="assets/user/img/brand/goggle.png" alt="Image Not Found">
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <img src="assets/user/img/brand/intel.png" alt="Image Not Found">
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <img src="assets/user/img/brand/cisco.png" alt="Image Not Found">
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <img src="assets/user/img/brand/apple.png" alt="Image Not Found">
+                                </div>
+                                <!-- End Single Item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Bradn Area -->
+
     <!-- Start Testimonials
     ============================================= -->
-    <div class="testimonail-style-one-area default-padding">
+    <!-- <div class="testimonail-style-one-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -643,11 +690,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 pt-200 pt-md-50 pt-xs-40">
-                    <div class="testimonial-style-one-carousel swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Single item -->
-                            <div class="swiper-slide">
+                    <div class="testimonial-style-one-carousel swiper"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper"> -->
+    <!-- Single item -->
+    <!-- <div class="swiper-slide">
                                 <div class="testimonial-style-one">
 
                                     <div class="item">
@@ -668,10 +715,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End Single item -->
-                            <!-- Single item -->
-                            <div class="swiper-slide">
+                            </div> -->
+    <!-- End Single item -->
+    <!-- Single item -->
+    <!-- <div class="swiper-slide">
                                 <div class="testimonial-style-one">
                                     <div class="item">
 
@@ -691,10 +738,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End Single item -->
-                            <!-- Single item -->
-                            <div class="swiper-slide">
+                            </div> -->
+    <!-- End Single item -->
+    <!-- Single item -->
+    <!-- <div class="swiper-slide">
                                 <div class="testimonial-style-one">
                                     <div class="item">
 
@@ -714,19 +761,19 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End Single item -->
-                        </div>
+                            </div> -->
+    <!-- End Single item -->
+    <!-- </div> -->
 
-                        <!-- If we need pagination -->
-                        <div class="testimonial-style-one-pagination">
-                            <div class="swiper-pagination"></div>
-                        </div>
+    <!-- If we need pagination -->
+    <div class="testimonial-style-one-pagination">
+        <div class="swiper-pagination"></div>
+    </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     <!-- End Testimonials -->
 
@@ -752,13 +799,13 @@
                     </ul>
                 </div> -->
 
-                <!-- <div class="col-lg-6 offset-lg-1 mt-md-50 mt-xs-50">
+    <!-- <div class="col-lg-6 offset-lg-1 mt-md-50 mt-xs-50">
                     <div class="choose-us-syle-three">
                         <h4 class="sub-title">Our Value</h4>
                         <h2 class="title">We Assist our clients in achieving their business </h2>
                         <div class="skill-items mt-40"> -->
-                            <!-- Progress Bar Start -->
-                            <!-- <div class="progress-box">
+    <!-- Progress Bar Start -->
+    <!-- <div class="progress-box">
                                 <h5>Business Idea</h5>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" data-width="88">
@@ -774,13 +821,13 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <!-- End Progressbar -->
-                        <!-- </div>
+    <!-- End Progressbar -->
+    <!-- </div>
                     </div>
                 </div> -->
 
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
     <!-- End Why Choose us  -->
 
@@ -847,7 +894,7 @@
                     <div class="contact-form-style-one">
                         <h4 class="sub-title">Let’s talk</h4>
                         <h2 class="title">Send us a Massage</h2>
-                        <form action="https://validthemes.net/site-template/dilabs/assets/user/mail/contact.php" method="POST" class="contact-form contact-form">
+                        <form action="#" method="POST" class="contact-form contact-form">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -879,7 +926,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 text-center">
-                                    <a href="https://wa.me/6281234567890" class="btn btn-whatsapp" target="_blank">
+                                    <a href="https://wa.me/6281234567890" class="btn2 btn-whatsapp" target="_blank">
                                         <i class="fab fa-whatsapp"></i>
                                         Let’s talk
                                     </a>
@@ -912,8 +959,8 @@
         </div>
         <div class="container">
             <div class="row"> -->
-                <!-- Single Item -->
-                <!-- <div class="col-xl-4 col-md-6 mb-30">
+    <!-- Single Item -->
+    <!-- <div class="col-xl-4 col-md-6 mb-30">
                     <div class="blog-style-one">
                         <div class="relative">
                             <div class="thumb">
@@ -941,9 +988,9 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <!-- <div class="col-xl-4 col-md-6 mb-30">
+    <!-- End Single Item -->
+    <!-- Single Item -->
+    <!-- <div class="col-xl-4 col-md-6 mb-30">
                     <div class="blog-style-one">
                         <div class="relative">
                             <div class="thumb">
@@ -971,9 +1018,9 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <!-- <div class="col-xl-4 col-md-6 mb-30">
+    <!-- End Single Item -->
+    <!-- Single Item -->
+    <!-- <div class="col-xl-4 col-md-6 mb-30">
                     <div class="blog-style-one">
                         <div class="relative">
                             <div class="thumb">
@@ -1001,8 +1048,8 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- End Single Item -->
-            <!-- </div>
+    <!-- End Single Item -->
+    <!-- </div>
         </div>
     </div> -->
     <!-- End Blog -->
@@ -1013,18 +1060,14 @@
     <footer class="bg-dark text-light" style="background-image: url(assets/user/img/shape/5.png);">
 
         <div class="container">
-            <div class="f-items default-padding-bottom pt-70 pt-xs-0">
+            <div class="f-items default-padding-bottom" style="margin-bottom: -5%;">
                 <div class="row">
                     <!-- Singel Item -->
                     <div class="col-lg-3 col-md-6 footer-item mt-50">
-                        <div class="footer-animated-shape">
-                            <img src="assets/user/img/shape/6.png" alt="Image Not Found">
-                        </div>
-                        <div class="f-item about pr-50 pr-xs-0 pr-md-0">
-                            <img class="logo" src="{{asset ('assets/user/img/logo.png')}}" alt="Logo" style="max-width:100%; height:auto;">
+                        <div class="f-item about pr-50">
+                            <img class="logo" src="{{asset ('assets/user/img/logo-footer.png')}}" alt="Logo">
                             <p>
-                                Are off under folly death writter transforming cold regular. Almost do am or limits of hearts.
-                            </p>
+                                Keunggulan kami dalam berbagai proyek mekanikal elektrikal, infrastruktur, dan turut serta mentransformasi dunia pendidikan di Indonesia. </p>
                             <div class="footer-social mt-30">
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1039,25 +1082,25 @@
                     <!-- Singel Item -->
                     <div class="col-lg-3 col-md-6 mt-50 footer-item pl-50 pl-md-15 pl-xs-15">
                         <div class="f-item link">
-                            <h4 class="widget-title">Company</h4>
+                            <h4 class="widget-title">Quick Links</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">Compnay Profile</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
                                     <a href="/about-us">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">Help Center</a>
+                                    <a href="/product/pegacare">Product</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Career</a>
+                                    <a href="/portfolio">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a href="pricing.html">Plans & Pricing</a>
+                                    <a href="/blog">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Contact</a>
+                                    <a href="/contact-us">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -1065,7 +1108,7 @@
                     <!-- End Singel Item -->
 
                     <!-- Singel Item -->
-                    <div class="col-lg-3 col-md-6 footer-item  mt-50">
+                    <div class="col-lg-3 col-md-6 footer-item mt-50">
                         <div class="f-item contact">
                             <h4 class="widget-title">Contact Info</h4>
                             <ul>
@@ -1078,13 +1121,13 @@
                                 <li>
                                     <div class="content">
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@pegasusindonesia.co.id">info@pegasusindonesia.co.id</a>
+                                        info@pegasusindonesia.co.id
                                     </div>
                                 </li>
                                 <li>
                                     <div class="content">
                                         <strong>Phone:</strong>
-                                        <a href="tel:+62 274515555">(+62) 274 515555</a>
+                                        (+62) 274 515555
                                     </div>
                                 </li>
                             </ul>
@@ -1094,21 +1137,25 @@
 
                     <!-- Singel Item -->
                     <div class="col-lg-3 col-md-6 footer-item mt-50">
-                        <div class="f-item newsletter">
-                            <h4 class="widget-title">Newsletter</h4>
-                            <p>
-                                Join our subscribers list to get the instant latest news and special offers.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                            </form>
+                        <div class="f-item link">
+                            <h4 class="widget-title">Our Products</h4>
+                            <ul>
+                                <li>
+                                    <a href="/product/pegacare">Pegacare</a>
+                                </li>
+                                <li>
+                                    <a href="/product/goggle-for-education">Goggle For Education</a>
+                                </li>
+                                <li>
+                                    <a href="/product/konstruksi">Konstruksi</a>
+                                </li>
+                                <li>
+                                    <a href="/product/industri-perbankan">Industri Perbankan</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <!-- End Singel Item -->
-
-
-
                 </div>
             </div>
         </div>
@@ -1119,7 +1166,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <p>
-                            Copyright &copy; 2023 Atozen. All Rights Reserved
+                            Copyright &copy; 2023 Pegasus Indonesia. All Rights Reserved.
                         </p>
                     </div>
                 </div>
@@ -1155,4 +1202,5 @@
 </body>
 
 <!-- Mirrored from validthemes.net/site-template/dilabs/business.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 05:56:05 GMT -->
+
 </html>

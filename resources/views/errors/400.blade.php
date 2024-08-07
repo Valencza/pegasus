@@ -71,14 +71,16 @@
                         <li><a href="{{ url('/') }}" class="dropdown-toggle" style="{{ Request::is('/') ? 'color: #2667FF; opacity: 1;' : '' }}">Home</a></li>
                         <li><a href="{{ url('/about-us') }}" class="dropdown-toggle" style="{{ Request::is('about-us') ? 'color: #2667FF; opacity: 1;' : '' }}">About Us</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="{{ Request::is('service/*') ? 'color: #2667FF; opacity: 1;' : '' }}">Services</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="{{ Request::is('product/*') ? 'color: #2667FF; opacity: 1;' : '' }}">Product</a>
                             <ul class="dropdown-menu">
-                                <li><a href="{{ url('/service/solusi') }}">Solusi</a></li>
-                                <li><a href="{{ url('/service/layanan-handal-responsif') }}">Layanan Handal & Responsif</a></li>
-                                <li><a href="{{ url('/service/memberi-manfaat-bagi-masyarakat') }}">Memberi Manfaat Bagi Masyarakat</a></li>
+                            <li><a href="{{ url('/product/pegacare') }}">Pegacare</a></li>
+                                <li><a href="{{ url('/product/product-goggle') }}">Product Goggle</a></li>
+                                <li><a href="{{ url('/product/edutech') }}">Edutech</a></li>
+                                <li><a href="{{ url('/product/konstruksi') }}">Konstruksi</a></li>
+                                <li><a href="{{ url('/product/industri-perbankan') }}">Banking Industri</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{ url('/portfolio') }}" class="dropdown-toggle" style="{{ Request::is('portfolio') ? 'color: #2667FF; opacity: 1;' : '' }}">Portofolio</a></li>
+                        <li><a href="{{ url('/portfolio') }}" class="dropdown-toggle" style="{{ Request::is('portfolio') ? 'color: #2667FF; opacity: 1;' : '' }}">portfolio</a></li>
                         <li><a href="{{ url('/blog') }}" class="dropdown-toggle" style="{{ Request::is('blog') ? 'color: #2667FF; opacity: 1;' : '' }}">Blog</a></li>
                         <li><a href="{{ url('/contact-us') }}" style="{{ Request::is('contact-us') ? 'color: #2667FF; opacity: 1;' : '' }}">Contact</a></li>
                     </ul>

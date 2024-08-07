@@ -1,6 +1,6 @@
 @extends('templates.admin')
 
-@section('title', 'Manage Portfolio')
+@section('title', 'Manage Portofolio')
 
 @section('content')
     <div class="content-wrapper">
@@ -9,7 +9,7 @@
             <div class="card">
                 <div class="card-datatable table-responsive">
                     <div class="d-flex justify-content-between align-items-center p-3">
-                        <h2 class="mb-0">Manage Portfolio</h2>
+                        <h2 class="mb-0">Manage Portofolio</h2>
                         <a href="/add-portfolio" class="btn btn-primary">+ Tambah Data</a>
                     </div>
                     <div class="container mb-4">

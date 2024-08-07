@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-6 about-style-two">
                 <div class="about-two-thumb">
-                    <img src="{{asset('assets/user/img/thumb/4.jpg')}}" alt="Image Not Found">
+                    <img src="{{asset('assets/user/img/thumb/9.png')}}" alt="Image Not Found" style="width: 100%; height: auto;">
                     <div class="experience">
                         <h2><strong>9</strong> Years Experience</h2>
                     </div>
@@ -42,25 +42,15 @@
                     <p>
                         Kami melayani kebutuhan IT di masyarakat yang meliputi :
                     </p>
-                    <div class="about-grid-info">
-                        <a class="btn-round-animation" href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-                        <ul class="list-info-item">
-                            <li>
-                                <h4><a href="services-details.html">Instansi Pemerintahan <i
-                                            class="fas fa-angle-right"></i></a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="services-details.html">Perusahaan Swasta Nasional <i
-                                            class="fas fa-angle-right"></i></a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="services-details.html">Universitas Negeri dan Swasta <i
-                                            class="fas fa-angle-right"></i></a></h4>
-                            </li>
-                            <li>
-                                <h4><a href="services-details.html">Sekolah <i class="fas fa-angle-right"></i></a></h4>
-                            </li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-check">
+                                <li>Instansi Pemerintahan</li>
+                                <li>Perusahaan Swasta Nasional</li>
+                                <li>Universitas Negeri dan Swasta</li>
+                                <li>Sekolah</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,45 +59,53 @@
 </div>
 <!-- End About -->
 
-<!-- Start Why Choose Us
+<!-- Start Why Choose Us 
     ============================================= -->
-<div class="choose-us-style-two-area default-padding bg-dark text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4">
-                <div class="choose-us-style-two">
-                    <ul class="check-list-item">
-                        <li>
-                            <h4>VISI</h4>
-                            <p>
-                                PT. Nusantara Jaya Abadi sebagai penyedia layanan dan solusi terbaik dalam bidang
-                                komputer dan IT.
-                                Berkomitmen untuk memberikan service excelence kepada steakholder PT. Nusantara Jaya
-                                Abadi </p>
-                        </li>
-                    </ul>
+    <div class="choose-us-style-two-area default-padding bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="choose-us-style-two">
+                        <h2 class="title mb-50">Our <br> Visi Misi</h2>
+                        <ul class="check-list-item">
+                            <li>
+                                <h4>Visi</h4>
+                                <p>
+                                    PT. Nusantara Jaya Abadi sebagai penyedia layanan dan solusi terbaik dalam bidang komputer dan IT. 
+                                    Berkomitmen untuk memberikan service excelence kepada steakholder PT. Nusantara Jaya Abadi
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Misi</h4>
+                                <p>
+                                    Memberikan pelayanan melalui teknologi informasi melalui produk IT dan Komputer.Menyediakan fasilitas yang handal serta solusi 
+                                    dan layanan Teknologi Informasi.Untuk mengembangkan sumber daya manusia berkualitas di bidang Teknologi Informasi.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xl-7 offset-xl-1">
-                <ul class="check-list-item">
-                    <li>
-                        <h4>MISI</h4>
-                        <p>
-                            1. Memberikan pelayanan melalui teknologi informasi melalui produk IT dan Komputer. <br>
-                            2. Menyediakan fasilitas yang handal serta solusi dan layanan Teknologi Informasi. <br>
-                            3. Untuk mengembangkan sumber daya manusia berkualitas di bidang Teknologi Informasi.
-                        </p>
-                    </li>
-                </ul>
+                <div class="col-xl-7 offset-xl-1 text-end">
+                    <div class="choose-us-style-two-thumb">
+                        <div class="curve-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                                <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                                <text><textPath href="#textPath">Award winning creative digital agency</textPath></text>
+                            </svg>
+                        </div>
+                        <h4>We have worked for you</h4>
+                        <h2 class="text-path">since 2015</h2>
+                        <img src="assets/user/img/banner/4.png" alt="Image Not Found">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Why Choose Us -->
+    <!-- End Why Choose Us -->
 
 <!-- Start Team
     ============================================= -->
-<div class="team-style-two-area bg-gray default-padding-top pb-70 pb-xs-0">
+<div class="team-style-two-area default-padding-top pb-70 pb-xs-0" style="background: linear-gradient(135deg, #FFFFFF, #F3F3F3 70%);">
 
     <div class="container">
         <div class="row align-center">
@@ -126,7 +124,7 @@
                         <img src="assets/user/img/team/1.jpg" alt="Image Not Found">
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="team-details.html">James Baker</a></h4>
+                                <h4 style="color: var(--white)"><strong>James Baker</strong></h4>
                                 <span>Marketing</span>
                             </div>
                         </div>
@@ -141,7 +139,7 @@
                         <img src="assets/user/img/team/2.jpg" alt="Image Not Found">
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="team-details.html">Dalton Grant</a></h4>
+                                <h4 style="color: var(--white)"><strong>Dalton Grant</strong></h4>
                                 <span>Project Manager</span>
                             </div>
 
@@ -157,7 +155,7 @@
                         <img src="assets/user/img/team/3.jpg" alt="Image Not Found">
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="team-details.html">Ryan Ricketts</a></h4>
+                                <h4 style="color: var(--white)"><strong>Ryan Ricketts</strong></h4>
                                 <span>Director</span>
                             </div>
                         </div>
@@ -172,7 +170,7 @@
                         <img src="assets/user/img/team/4.jpg" alt="Image Not Found">
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="team-details.html">James Baker</a></h4>
+                                <h4 style="color: var(--white)"><strong>James Baker</strong></h4>
                                 <span>Marketing</span>
                             </div>
                         </div>
@@ -187,7 +185,22 @@
                         <img src="assets/user/img/team/5.jpg" alt="Image Not Found">
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="team-details.html">Dalton Grant</a></h4>
+                                <h4 style="color: var(--white)"><strong>Dalton Grant</strong></h4>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+             <!-- Single Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-50 wow fadeInLeft" data-wow-delay="700ms">
+                <div class="team-style-two">
+                    <div class="thumb">
+                        <img src="assets/user/img/team/1.jpg" alt="Image Not Found">
+                        <div class="team-info">
+                            <div class="content">
+                                <h4 style="color: var(--white)"><strong>Dalton Grant</strong></h4>
                                 <span>Project Manager</span>
                             </div>
                         </div>
@@ -208,92 +221,164 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="site-heading text-center">
-                    <h2 class="title">Partnership</h2>
+                    <h2 class="title">Our Principal <br> Partnership </h2>
                     <br>
-                    <h4>Our awesome partnership we've had the pleasure to work with!</h4>
-                    <h7>Berkomitmen untuk memberikan service excelence kepada steakholder PT. Nusantara Jaya Abadi.
-                    </h7>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-apple.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">Apple</a></h4>
-                    </div>
+
+    <div class="row justify-content-center">
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/28.png" alt="Image Not Found">
                 </div>
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-cisco.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">Cisco</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-dell.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">Dell</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-hp.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">Hp</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-IBM.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">IBM</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="team-style-three">
-                    <div class="thumb" style="background-image: url(assets/user/img/shape/31.png);">
-                        <img src="assets/user/img/banner/logo-intel.png" alt="Image Not Found">
-                    </div>
-                    <div class="content">
-                        <h4><a href="#">Intel</a></h4>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
         </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/29.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/30.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/31.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/32.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <div class="w-100"></div>
+        <!-- Single Item -->
     </div>
+
+    <div class="row justify-content-center">
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/33.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->    
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/34.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/35.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/36.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb" >
+                    <img src="assets/user/img/partnership/37.png" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <div class="w-100"></div>
+    </div>
+
+    <div class="row justify-content-center">
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb">
+                    <img src="assets/user/img/partnership/38.png" class="img-fluid" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb">
+                    <img src="assets/user/img/partnership/39.png" class="img-fluid" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb">
+                    <img src="assets/user/img/partnership/40.png" class="img-fluid" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb">
+                    <img src="assets/user/img/partnership/41.png" class="img-fluid" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-xl-2 col-md-6 mb-30">
+            <div class="team-style-three text-center">
+                <div class="thumb">
+                    <img src="assets/user/img/partnership/42.png" class="img-fluid" alt="Image Not Found">
+                </div>
+            </div>
+        </div>
+        <!-- End Single Item -->
+        <div class="w-100"></div>
+    </div>
+</div>
+
 </div>
 <!-- End Team  -->
 @endsection

@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\portfolioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -9,8 +9,8 @@ use App\Http\Controllers\AdminController;
 
 
 require __DIR__ . '/auth.php';
-Route::get('/', [PortfolioController::class, 'show']);
-// Route::get('/portfolio/details/{slug}', [PortfolioController::class, 'show_details'])->name('portfolio.details');
+Route::get('/', [portfolioController::class, 'show']);
+// Route::get('/portfolio/details/{slug}', [portfolioController::class, 'show_details'])->name('portfolio.details');
 
 
 // ROUTE USER
@@ -22,15 +22,20 @@ Route::get('/contact-us', function () {
     return view('user/contact-us');
 });
 
-Route::get('/service/solusi', function () {
-    return view('user.service.solusi');
+//Route Product
+Route::get('/product/pegacare', function () {
+    return view('user.product.pegacare');
 });
-Route::get('/service/layanan-handal-responsif', function () {
-    return view('user.service.layanan-handal-responsif');
+Route::get('/product/goggle-for-education', function () {
+    return view('user.product.goggle-for-education');
 });
-Route::get('/service/memberi-manfaat-bagi-masyarakat', function () {
-    return view('user.service.memberi-manfaat-bagi-masyarakat');
+Route::get('/product/konstruksi', function () {
+    return view('user.product.konstruksi');
 });
+Route::get('/product/industri-perbankan', function () {
+    return view('user.product.industri-perbankan');
+});
+
 Route::get('/detail-iso', function () {
     return view('user.iso');
 });
@@ -38,8 +43,8 @@ Route::get('/detail-iso', function () {
 Route::get('/blog', [BlogController::class, 'show'])->name('blog');
 Route::get('/blog/details/{slug}', [BlogController::class, 'detailBlog'])->name('blog.detail');
 
-Route::get('/portfolio', [PortfolioController::class, 'display'])->name('portfolio');
-Route::get('/portfolio/details/{slug}', [PortfolioController::class, 'detailPortfolio'])->name('portfolio.detail');
+Route::get('/portfolio', [portfolioController::class, 'display'])->name('portfolio');
+Route::get('/portfolio/details/{slug}', [portfolioController::class, 'detailportfolio'])->name('portfolio.detail');
 
 Route::get('/dashboard', function () {
     return view('admin/dashboard/index');
@@ -55,13 +60,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/profile/update', [ProfileController::class, 'updateProfile'])->name('profile.updatee');
     Route::post('/profile/photo', [ProfileController::class, 'updateProfilePhoto'])->name('profile.photo'); // Pastikan fungsi ini ada di controller Anda
 
-    // ROUTE PORTFOLIO
-    Route::get('/manage-portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
-    Route::get('/add-portfolio', [PortfolioController::class, 'create'])->name('portfolio.create');
-    Route::post('/add-portfolio', [PortfolioController::class, 'store'])->name('portfolio.store');
-    Route::get('/edit-portfolio/{Portfolio_id}', [PortfolioController::class, 'edit'])->name('portfolio.edit');
-    Route::post('/update-portfolio/{Portfolio_id}', [PortfolioController::class, 'update'])->name('portfolio.update');
-    Route::delete('/delete-portfolio/{portfolio_id}', [PortfolioController::class, 'destroy'])->name('portfolio.delete');
+    // ROUTE portfolio
+    Route::get('/manage-portfolio', [portfolioController::class, 'index'])->name('portfolio.index');
+    Route::get('/add-portfolio', [portfolioController::class, 'create'])->name('portfolio.create');
+    Route::post('/add-portfolio', [portfolioController::class, 'store'])->name('portfolio.store');
+    Route::get('/edit-portfolio/{portfolio_id}', [portfolioController::class, 'edit'])->name('portfolio.edit');
+    Route::post('/update-portfolio/{portfolio_id}', [portfolioController::class, 'update'])->name('portfolio.update');
+    Route::delete('/delete-portfolio/{portfolio_id}', [portfolioController::class, 'destroy'])->name('portfolio.delete');
 
     // ROUTE BLOG
     Route::get('/manage-blog', [BlogController::class, 'index'])->name('blog.index');

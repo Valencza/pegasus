@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 
-class Portfolio extends Model
+class portfolio extends Model
 {
     use HasFactory;
 
